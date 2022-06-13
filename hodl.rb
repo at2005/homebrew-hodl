@@ -11,7 +11,7 @@ class Hodl < Formula
   # depends_on "cmake" => :build
 
   def install
-    mkdir bin
+    mkdir "bin"
     system "make"
   end
 

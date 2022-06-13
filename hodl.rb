@@ -11,10 +11,10 @@ class Hodl < Formula
   # depends_on "cmake" => :build
 
   def install
-    mkdir "bin" do
-   	system "make"
-    end
-
+  bin.install "hodl"
+   mkdir "bin"
+   pwd
+   system "make"
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method

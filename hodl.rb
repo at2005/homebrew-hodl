@@ -12,7 +12,8 @@ class Hodl < Formula
 
   def install
     mkdir "bin"
-    system "make", "install"
+    system "make"
+    bin.install "bin/qc"
   end
 
 end

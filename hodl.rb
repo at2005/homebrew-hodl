@@ -12,7 +12,7 @@ class Hodl < Formula
 
   def install
     mkdir "bin"
-    system "make"
+    system "make", "install"
   end
 
 end

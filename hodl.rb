@@ -12,5 +12,4 @@ class Hodl < Formula
 	bin.install "bin/hodl"
   end
 
-  end
 end

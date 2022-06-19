@@ -5,10 +5,12 @@ class Hodl < Formula
   sha256 "5438f90b5df21539a6b15484c2416149a894ac12a5ac5644b6ccddcf06507618"
   license "MIT"
 
+
   def install
-    mkdir "bin"
-    system "make"
-    bin.install "bin/hodl"
+  	mkdir "bin"
+	system "make"
+	bin.install "bin/hodl"
   end
 
+  end
 end
